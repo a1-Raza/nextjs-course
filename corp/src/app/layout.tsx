@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -22,11 +23,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // lines with Link: added to keep top bar with "jumps" to other pages
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div>
+          <Link href="/">Home </Link>
+          <Link href="/performance">Performance </Link>
+          <Link href="/reliability">Reliability </Link>
+          <Link href="/scale">Scale</Link>
+        </div>
         {children}
       </body>
     </html>
