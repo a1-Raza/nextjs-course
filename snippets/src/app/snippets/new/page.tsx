@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 export default function SnippetCreatePage() {
   async function createSnippet(formData: FormData) {
+    // this async function runs only on the Next.js built-in server, not on the page
     // this needs to be a server action, the line below is a next.js thing for how it determines server actions
     "use server";
 
