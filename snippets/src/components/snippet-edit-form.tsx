@@ -3,6 +3,7 @@
 import type { Snippet } from "@prisma/client";
 import { Editor } from "@monaco-editor/react";
 import { useState } from "react";
+import * as actions from "@/actions"; // bc file is called index.ts, no need to include index in directory
 
 interface SnippetEditFormProps {
   snippet: Snippet;
