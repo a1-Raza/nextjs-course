@@ -11,7 +11,7 @@ export default function Navbar({ imgUrl, children }: NavbarProps) {
     return (
       <div className="flex shrink-0 items-center">
         <a href="/">
-          <img className="h-8 w-auto" src={imgUrl} alt="Logo" />
+          <img className="h-6 pr-6 w-auto" src={imgUrl} alt="Logo" />
         </a>
       </div>
     );
@@ -19,11 +19,12 @@ export default function Navbar({ imgUrl, children }: NavbarProps) {
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+      <div className="container-fluid pl-20">
+        {navbarImg()}
+        {/*<a className="navbar-brand" href="/">
           Navbar
         </a>
-        <button
+        /*<button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -33,8 +34,8 @@ export default function Navbar({ imgUrl, children }: NavbarProps) {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        </button>*/}
+        <div className="navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">{children}</div>
         </div>
       </div>

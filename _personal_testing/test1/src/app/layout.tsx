@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar>
+        <Navbar imgUrl="/next.svg">
           <NavbarButton href="/">Home</NavbarButton>
           <NavbarButton href="/about">About</NavbarButton>
           <NavbarButton href="/projects">Projects</NavbarButton>
