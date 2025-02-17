@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar imgUrl="/next.svg">
+        <Navbar>
           <NavbarButton href="/">Home</NavbarButton>
           <NavbarButton href="/about">About</NavbarButton>
           <NavbarButton href="/projects">Projects</NavbarButton>
